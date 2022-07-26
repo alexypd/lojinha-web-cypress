@@ -15,9 +15,9 @@ class LoginPage {
 
     }
 
-    errorToast(){
+    msgToast(msg){
 
-        cy.contains('div .toast', 'Falha ao fazer o login')
+        cy.contains('div .toast', msg).should('be.visible')
         
     }
 
