@@ -15,13 +15,13 @@ describe('product page', ()=> {
     it('validar tela adicionar produto', ()=>{
 
         product.submitProduct()
-        
+
         product.validMsgAddProduct()
         product.validMsgProduct()
 
     })
 
-    it('adicionar produto', ()=> {
+    it('adicionar um produto', ()=> {
 
         product.submitProduct()
 

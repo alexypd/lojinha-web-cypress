@@ -19,14 +19,14 @@ describe('login page', () => {
 
         login.go('admin', 'nimda')
         login.submit()
-        login.errorToast()
+        login.msgToast('Falha ao fazer o login')
 
     })
 
     it('validar mensagem sem informar usuario', () => {
 
         login.submit()
-        login.errorToast()
+        login.msgToast('Falha ao fazer o login')
 
     })
 
